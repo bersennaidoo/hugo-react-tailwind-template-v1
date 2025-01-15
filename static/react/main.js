@@ -23589,7 +23589,7 @@
   // static/react/App.tsx
   var import_react = __toESM(require_react());
   function App() {
-    return /* @__PURE__ */ import_react.default.createElement("div", { className: "pt-5 mt-5" }, /* @__PURE__ */ import_react.default.createElement("h1", null, "Entry point react"));
+    return /* @__PURE__ */ import_react.default.createElement("div", { className: "text-yellow-500" }, /* @__PURE__ */ import_react.default.createElement("h1", null, "Entry point react"));
   }
   var App_default = App;
 

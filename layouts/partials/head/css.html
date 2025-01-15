@@ -12,7 +12,7 @@
   {{- end }}
 {{- end }}
 
-{{- with resources.Get "tailwind/tailwind.css" | postCSS }}
+{{- with resources.Get "tailwind/tailwind.scss" | toCSS | postCSS }}
   {{- if eq hugo.Environment "development" }}
     <link rel="stylesheet" href="{{ .RelPermalink }}">
   {{- else }}
@@ -72,7 +72,7 @@
   {{- end }}
 {{- end }}
 
-{{- with resources.Get "sass/application.scss" | toCSS }}
+{{/*{{- with resources.Get "sass/application.scss" | toCSS }}
   {{- if eq hugo.Environment "development" }}
     <link rel="stylesheet" href="{{ .RelPermalink }}">
   {{- else }}
@@ -80,7 +80,7 @@
       <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
     {{- end }}
   {{- end }}
-{{- end }}
+{{- end }}*/}}
 
 
 

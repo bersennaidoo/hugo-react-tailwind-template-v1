@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function App() {
   return (
-    <div className="pt-5 mt-5">
+    <div className="text-yellow-500">
       <h1>Entry point react</h1>
     </div>
   );

@@ -6,6 +6,7 @@
       "@coreui/react": "project",
       "@fortawesome/fontawesome-free": "project",
       "@popperjs/core": "project",
+      "@tailwindcss/typography": "project",
       "@testing-library/jest-dom": "project",
       "@testing-library/react": "project",
       "@testing-library/user-event": "project",
@@ -14,6 +15,7 @@
       "@types/react": "project",
       "@types/react-dom": "project",
       "animate.css": "project",
+      "autoprefixer": "project",
       "axios": "project",
       "bootstrap": "project",
       "esbuild": "project",
@@ -21,9 +23,12 @@
       "jquery": "project",
       "jquery.easing": "project",
       "lightbox2": "project",
+      "postcss": "project",
+      "postcss-cli": "project",
       "react": "project",
       "react-dom": "project",
       "react-router-dom": "project",
+      "tailwindcss": "project",
       "tiny-slider": "project",
       "waypoints": "project",
       "wow.js": "project"
@@ -67,8 +72,8 @@
   "name": "hugo-react-tailwind-template-v1",
   "scripts": {
     "esbuild:dev": "node ./esmscript.dev.mjs",
-    "tsc:dev": "tsc -w",
-    "ntl:dev": "ntl dev -c 'hugo server -w' --target-port 1313"
+    "ntl:dev": "ntl dev -c 'hugo server -w' --target-port 1313",
+    "tsc:dev": "tsc -w"
   },
   "version": "0.1.0"
 }
