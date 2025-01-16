@@ -31,6 +31,8 @@ module:
       target: "assets/css"
     - source: "node_modules/@fortawesome/fontawesome-free/scss"
       target: "assets/css"
+    - source: "node_modules/alpinejs"
+      target: "static/alpinejs"
 
 menus:
   main:

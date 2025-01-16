@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.c-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    &__item {
+    }
+}
+
+.c-hero {
+    inline-size: 1100px;
+    block-size: 400px;
+    background-color: aqua;
+    padding: 2rem;
+    margin-inline-start: 3rem;
+    margin-block-end: 1rem;
+
+}
+
+.c-container {
+}

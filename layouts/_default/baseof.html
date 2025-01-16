@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  {{ partial "head.html" . }}
-</head>
-<body>
-  <header>
-    {{ partial "header.html" . }}
-  </header>
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
-  <footer>
-    {{ partial "footer.html" . }}
-  </footer>
-</body>
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+    <header>{{ partial "headerp/headerp.html" . }}</header>
+    <main class="c-container p-8">
+      <div class="grid grid-cols-12 gap-x-4 gap-y-2">
+        <div class="col-span-12">{{ block "main" . }}{{ end }}</div>
+      </div>
+    </main>
+    {{ partial "footerp/footerp.html" . }}
+  </body>
 </html>

@@ -3,7 +3,10 @@ module.exports = {
     extend: {},
   },
   variants: {},
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("daisyui"), require("@tailwindcss/typography")],
+  daisyui: {
+    themes: ["lemonade", "dark"],
+  },
 
   content: ["./layouts/**/*.html", "./content/**/*.md", "./static/react/**/*.tsx"],
 };
